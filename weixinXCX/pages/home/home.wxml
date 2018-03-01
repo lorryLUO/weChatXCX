@@ -1,0 +1,40 @@
+<!--pages/home/home.wxml-->
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">点到到每个节点</button>
+    <button size="mini" bindtap="tapMove">点我改变高度</button>
+  </view>
+</view>
+<view class="section section_gap">
+  <view class="section__title">横向滚动</view>
+  <scroll-view scroll-x style="width: 100%">
+    <view class="scroll-view_H" >
+      <view  class="scroll-view-item_H bc_green">D</view>
+      <view  class="scroll-view-item_H bc_red">D</view>
+      <view  class="scroll-view-item_H bc_yellow"></view>
+      <view  class="scroll-view-item_H bc_blue"></view>
+    </view>
+  </scroll-view>
+</view>
+
+ <view class="section" id="giveMusicName">
+      <input
+        class="musicname"
+        value="{{name}}"
+        placeholder="请输入歌曲名称"
+        bindinput="bindMusicNameInput"
+      />
+      <button
+        type="primary"
+        bindtap="bindSearch"
+        style="margin:0;"
+      >搜索</button>
+    </view>

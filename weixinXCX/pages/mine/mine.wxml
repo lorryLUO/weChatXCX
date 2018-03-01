@@ -1,0 +1,5 @@
+<view class="container">
+   <text>{{myText}}</text>
+   <button type='defaut' bindtap = "clickFunction">测试</button>
+   <text>{{myText2.num}}</text>
+</view>

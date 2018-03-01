@@ -1,0 +1,5 @@
+/* pages/mine/mine.wxss */
+.container{
+   color:"#009cff";
+   
+}

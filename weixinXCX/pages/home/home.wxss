@@ -1,0 +1,46 @@
+/* pages/home/home.wxss */
+.scroll-view-item{
+  height: 100%;
+  width: 100%;
+}
+
+.scroll-view_H{
+  display: flex;
+  width: 500px;
+  height: 80px;
+  flex-direction: row;
+}
+
+.scroll-view-item_H{
+  width: 100px;
+  height: 100%;
+}
+
+.bc_green{
+  background: green;
+}
+
+.bc_red{
+  background: red;
+}
+
+.bg_yellow{
+  background: yellow;
+}
+
+.bc_blue{
+  background: blue;
+}
+
+.scroll-view-y{
+  height: 200px;
+}
+
+/* 搜索框  */
+.musicname {
+  border: 2px #ddd solid;
+  border-radius: 4px;
+  height: 100%;
+  padding: 8px;
+  font-family: "Microsoft Yahei";
+}
